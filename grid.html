@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary:rgb(112, 230, 112);
+            --vijay:rgb(255, 255, 164);
+        }
+        .container{
+           
+           
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 70px 70px 70px   ;
+        }
+        .child1{
+            background-color: rgb(135, 11, 31);
+            
+        }
+        .child4{
+            background-color: blue;
+            display: grid;
+            
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .child2{
+            background-color:var(--primary);
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .child6{
+            background-color: var(--primary);
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .child3{
+            background-color: var(--primary);
+        }
+        .child5{
+            background-color: var(--vijay);
+            grid-column-start: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .child7{
+          background-color: var(--primary);
+          grid-column-start: 6;
+          grid-row-start: 1;
+          grid-row-end: 4;
+
+        }
+        .child8{
+        background-color: var(--primary);
+          grid-column-start: 7;
+          grid-row-start: 1;
+          grid-row-end: 4;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="child1"></div>
+    <div class="child2"> </div>
+    <div class="child3"></div>
+    <div class="child4"></div>
+    <div class="child5"></div>
+    <div class="child6"></div>
+    <div class="child7"></div>
+    <div class="child8"></div>
+    </div>
+    
+</body>
+</html>
